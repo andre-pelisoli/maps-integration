@@ -1,5 +1,5 @@
 # maps-integration
-It is an Android application that shows how the integration with the Google Maps service works.
+It is an Android application that shows how the integration with the Google Maps service works. Expresso testing framework was used to test UI.
 
 #Setup
  - You must generate a key to integrate with Google Maps API. 
