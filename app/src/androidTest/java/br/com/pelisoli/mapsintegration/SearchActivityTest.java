@@ -40,8 +40,7 @@ public class SearchActivityTest {
 	public void informationNotDisplayedTest(){
 		onView(withId(R.id.edtSearch)).perform(replaceText(""), closeSoftKeyboard());
 		onView(withId(R.id.btnSearch)).perform(click());
-		onView(withId(R.id.txtInfo)).check(matches(not(isDisplayed())));
-		onView(withId(R.id.recycler)).check(matches(not(isDisplayed())));
+		onView(withText(R.string.empty_search)).check(matches(isDisplayed()));
 	}
 
 	@Test
