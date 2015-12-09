@@ -2,4 +2,5 @@
     <string name="app_name">MapsIntegration</string>
     <string name="title_activity_maps">Map</string>
     <string name="infoMessage">You are looking for</string>
+    <string name="empty_search">You must fill in search field</string>
 </resources>

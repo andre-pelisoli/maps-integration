@@ -3,6 +3,7 @@ package br.com.pelisoli.mapsintegration.activities;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -82,6 +83,11 @@ public class SearchActivity extends AppCompatActivity implements View.OnClickLis
                     txtInfo.setVisibility(View.GONE);
 
                     //Show warning message
+                    AlertDialog.Builder builder =
+                            new AlertDialog.Builder(this);
+                    builder.setMessage(getString(R.string.empty_search));
+                    builder.setPositiveButton("OK", null);
+                    builder.show();
 
                 }else {
                     txtInfo.setText(getString(R.string.infoMessage) + " " + edtSearch.getText().toString());
